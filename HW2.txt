@@ -1,0 +1,83 @@
+На локальном репозитории сделать ветки для:
+- Postman
+- Jmeter
+- CheckLists
+- Bag Reports
+- SQL
+- Charles
+- Mobile testing
+	Созданы репозитории - созданы ветки через git branch “....”
+
+Запушить все ветки на внешний репозиторий
+	cd Postman
+	git branch Onliner
+	git checkout Onliner
+	git push -u origin Onliner
+	cd ../Jmeter
+	git branch Currencycom
+	git checkout Currencycom
+	git push -u origin Currencycom
+	cd ../Checklists
+	git branch Comicoin
+	git checkout Comicoin
+	git push -u origin Comicion
+	cd ../Bag_Reports
+	git branch Comicoin
+	git checkout Comicoin
+	git push -u origin Comicion
+	cd ../SQL
+	git branch DB
+	git checkout DB
+	git push -u origin DB
+	cd ../Charles
+	git branch Govar
+	git checkout Govar
+	git push -u origin Govar
+	cd ../Mobile testing
+	git branch Comicoin
+	git checkout Comicoin
+	git push -u origin Comicoin
+	cd ..
+В ветке Bag Reports сделать текстовый документ со структурой баг репорта
+	vim bug_report_structure.txt
+	Title: A brief and descriptive title that summarizes the issue.
+	Description: A clear and concise description of the issue, including what happened, what was expected to happen, and any relevant information that could help in identifying the problem.
+	Steps to Reproduce: A list of steps that can be used to reproduce the issue. This can include specific actions taken, input values, and any other relevant details.
+	Expected Outcome: A description of what was expected to happen if the issue had not occurred.
+	Actual Outcome: A description of what actually happened, including any error messages or unexpected results.
+	Severity: An assessment of the severity of the issue, including its impact on functionality, user experience, or other important factors.
+	Environment: Information about the environment in which the issue occurred, such as the operating system, browser, device, and any other relevant details.
+	Reproducibility: An indication of how frequently the issue can be reproduced, and whether it occurs consistently or sporadically.
+	Attachments: Any relevant attachments, such as screenshots, error logs, or other supporting documents.
+Запушить структуру багрепорта на внешний репозиторий
+	git add .
+	git commit -m "Bug Report Structure"
+	git push -u origin Comicoin
+Вмержить ветку Bag Reports в Main
+	git checkout main
+	git merge Comicoin
+Запушить main на внешний репозиторий.
+	git add .
+	git commit -m "Bug_Report_Structure"
+	git push
+В ветке CheckLists набросать структуру чек листа.
+	cd ../Checklists
+	vim Checklist_str.txt
+	ID
+	Title
+	Expected result
+	Result
+	Bug Link
+	Comment
+Запушить структуру на внешний репозиторий
+	git add .
+	git commit -m "CheckList Structure"
+	git push
+На внешнем репозитории сделать Pull Request ветки CheckLists в main
+	Pull Request
+Merge Pull Request
+	Cofirm
+Синхронизировать Внешнюю и Локальную ветки Main
+	git checkout main
+	git fetch
+	git pull
