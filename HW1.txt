@@ -1,0 +1,167 @@
+JSON
+Создать внешний репозиторий c названием JSON.
+	Создал репозиторий в GitHub
+Клонировать репозиторий JSON на локальный компьютер
+Скопировал ссылку на репозиторий в GitHub
+git clone https://github.com/AnatoliyPetukh/JSON.git
+Внутри локального JSON создать файл “new.json”.
+	cat > new.json
+Добавить файл под гит.
+git add new.json
+Закоммитить файл.
+	git commit -m "Json file"
+Отправить файл на внешний GitHub репозиторий.
+	$ git push
+Отредактировать содержимое файла “new.json” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате JSON
+vim new.json
+i
+{
+  "name": "Anatoliy",
+  "age": 33,
+  "pets": "none",
+  "expected sallary": "2000$"
+}
+esc
+:
+	wq
+Отправить изменения на внешний репозиторий.
+	$ git commit -am "Info"
+	git push
+Создать файл preferences.json
+В файл preferences.json добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате JSON
+	vim preferences.json
+	{
+  	"film": "Pulp Fiction",
+  "age": "Breaking Bad",
+  "fav_food": "Pancakes",
+ 	 "fav_season": "autumn",
+ 	"wish_country": "USA"
+}
+	esc
+	:
+	wq
+.
+Создать файл skills.json добавить информацию о скиллах которые будут изучены на курсе в формате JSON
+vim preferences.json
+	{
+  	"skills": ["linux terminal", "postman", "SQL", "mobile testing", "devtools"]
+}
+	esc
+	:
+	wq
+Отправить сразу 2 файла на внешний репозиторий.
+git add .
+	git commit -m "Skills+Favs"
+На веб интерфейсе создать файл bug_report.json.
+Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+	Add file - Create new file - Commit new file
+На веб интерфейсе модифицировать файл bug_report.json, добавить баг репорт в формате JSON.
+Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+	Add file - Create new file
+{
+  "bug": {
+    	"title": "Error when trying to submit form",
+  	  "description": "When I try to submit the form, I receive a 500 Internal Server Error.",
+    	"stepsToReproduce": [
+     	 "Fill out the form with valid data",
+      	"Click on the submit button"
+  	  ],
+   	 "expectedResult": "Form is submitted successfully",
+   	 "actualResult": "500 Internal Server Error",
+    	"severity": "High",
+  	 "browser": "Chrome",
+   	 "operatingSystem": "Windows 10",
+    	"timestamp": "2023-03-12T10:30:00.000Z"
+ }
+}
+	Commit new file
+Синхронизировать внешний и локальный репозиторий JSON
+git pull
+
+
+XML
+Создать внешний репозиторий c названием XML.
+	+ - New Repository - Add a README file - Create Repository
+Клонировать репозиторий XML на локальный компьютер
+ git clone https://github.com/AnatoliyPetukh/XML.git
+cd XML.
+ Внутри локального XML создать файл “new.xml”.
+	cat > new.xml
+	ctrl+c
+Добавить файл под гит.
+	git add new.xml
+Закоммитить файл.
+git commit -m "XML file"	
+Отправить файл на внешний GitHub репозиторий
+git push.
+Отредактировать содержимое файла “new.xml” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате XML.
+	vim new.xml
+	i
+	<user>
+  <name>Anatoliy Petukh</name>
+ 	 <age>33</age>
+  	<pets>none</pets>
+  	<desiredSalary>2000</desiredSalary>
+</user>
+	esc
+	:
+	wq
+Отправить изменения на внешний репозиторий.
+	git add new.xml
+	git commit -m "XML upd"
+	git push
+Создать файл preferences.xm
+В файл preferences.xml добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате XML.
+	vim preferences.xml
+	i
+	<user>
+ 	 <favoriteMovie>The Shawshank Redemption</favoriteMovie>
+  	<favoriteTVShow>American Vandal</favoriteTVShow>
+  	<favoriteFood>Spaghetti</favoriteFood>
+  	<favoriteSeason>Autumn</favoriteSeason>
+  	<desiredDestination>USA</desiredDestination>
+</user>
+	esc
+	:
+	wq
+Создать файл skills.xml добавить информацию о скиллах которые будут изучены на курсе в формате XML
+vim skills.xml
+	i
+	<course>
+<title>QA Engineer</title>
+ 	<description>Software Tester courses</description>
+  	<skills>
+   	 <skill>Databases</skill>
+    	<skill>JavaScrypt</skill>
+    	<skill>Jmeter</skill>
+    	<skill>CheckLists</skill>
+  	</skills>
+</course>
+	esc
+	:
+	wq
+Сделать коммит в одну строку.
+vim skills.xml
+Отправить сразу 2 файла на внешний репозиторий.
+	git commit -m "Skills Preferences"
+	git push
+На веб интерфейсе создать файл bug_report.xml.
+Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+Add file - Create new file - Commit new file
+На веб интерфейсе модифицировать файл bug_report.xml, добавить баг репорт в формате XML.
+	<bugReport>
+  	<title>Application crashes when clicking "Save" button</title>
+<description>When clicking the "Save" button in the application, it crashes and closes without saving any changes. This issue occurs consistently and has been observed on multiple devices.</description>
+  	<stepsToReproduce>
+    	<step>Open the application and create a new document.</step>
+    	<step>Make some changes to the document.</step>
+   	<step>Click the "Save" button.</step>
+    	<step>Observe that the application crashes and closes.</step>
+  	</stepsToReproduce>
+<expectedResult>The application should save the changes and remain open.</expectedResult>
+  	<actualResult>The application crashes and closes without saving any changes.</actualResult>
+</bugReport>
+Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+	Commit new file
+Синхронизировать внешний и локальный репозиторий XML
+	git pull
